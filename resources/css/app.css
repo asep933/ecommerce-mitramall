@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.glow-button {
+    box-shadow: 0 0 20px #ff8225;
+    transition: box-shadow 0.3s ease;
+}
+
+.animateX {
+    animation: moveHorizontal 12s linear infinite;
+}
+
+@keyframes moveHorizontal {
+    0% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+:root {
+    @apply bg-first transition duration-300 ease-in-out capitalize overflow-x-hidden;
+}
